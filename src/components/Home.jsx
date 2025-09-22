@@ -1,0 +1,15 @@
+import React from 'react'
+import Header from './Header'
+import Extension from './Extension'
+
+const Home = () => {
+  return (
+   <div className="font-sans py-8 px-[5%] flex flex-col gap-6"
+   style={{backgroundImage: 'var(--light-gradient)'}}>
+  <Header />
+  <Extension />
+</div>
+  )
+}
+
+export default Home
