@@ -4,7 +4,7 @@ import Extension from './Extension'
 
 const Home = () => {
   return (
-   <div className="font-sans py-8 px-[5%] flex flex-col gap-6"
+   <div className="font-sans py-8 px-[5%] flex flex-col gap-10"
    style={{backgroundImage: 'var(--light-gradient)'}}>
   <Header />
   <Extension />

@@ -1,31 +1,28 @@
 import React, { useState } from "react";
 
-const ToggleSwitch = ({isActive}) => {
-  const [isChecked, setIsChecked] = useState(isActive);
+const ToggleSwitch = ({isActive, onChange}) => {
+
 
   return (
-    <label className="flex items-center cursor-pointer">
+    <label tabIndex={0} className="flex items-center cursor-pointer border-2 border-transparent outline outline-2 outline-transparent focus:outline-[var(--red-700)] focus:border-[var(--neutral-0)] rounded-full">
       <div className="relative">
         <input
           type="checkbox"
-          checked={isChecked}
-          onChange={() => setIsChecked(!isChecked)}
+          checked={isActive}
+          onChange={() => onChange(!isActive)}
           className="sr-only"
         />
         <div
           className={`w-10 h-6 rounded-full shadow-inner ${
-            isChecked ? "bg-[var(--red-700)]" : "bg-[var(--neutral-300)]"
+            isActive ? "bg-[var(--red-700)] hover:bg-[var(--red-500)]" : "bg-[var(--neutral-300)]"
           }`}
         ></div>
         <div
           className={`absolute top-0 left-0 w-6 h-6 bg-white rounded-full shadow transform transition-transform ${
-            isChecked ? "translate-x-4" : ""
+            isActive ? "translate-x-4" : ""
           }`}
         ></div>
       </div>
-      {/* <span className="ml-3 text-sm text-[var(--neutral-900)]">
-        {isChecked ? 'Enabled' : 'Disabled'}
-      </span> */}
     </label>
   );
 };
