@@ -12,9 +12,9 @@ const Extension = () => {
       prev.map((item) => (item.id === id ? { ...item, isActive: value } : item))
     );
   };
-  const handRemove = (id) => {
-    setData((prev)=> prev.filter((item) => item.id !== id))
-  }
+  const handleRemove = (id) => {
+    setData((prev) => prev.filter((item) => item.id !== id));
+  };
 
   const filterData = data.filter((item) => {
     if (filter === "all") return true;
@@ -26,7 +26,12 @@ const Extension = () => {
       <ExtensionHead setFilter={setFilter} />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {filterData.map((item) => (
-          <ExtensionCard key={item.id} {...item} onToggle={handleToggle} onRemove={handRemove} />
+          <ExtensionCard
+            key={item.id}
+            {...item}
+            onToggle={handleToggle}
+            onRemove={handleRemove}
+          />
         ))}
       </div>
     </div>
