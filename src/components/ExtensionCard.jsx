@@ -23,7 +23,7 @@ const ExtensionCard = ({
       </div>
       <div className="flex justify-between items-center">
         <button
-          className="bg-[var(--neutral-0)]  rounded-full px-4 py-1 border-2 border-[var(--neutral-300)] hover:text-[var(--neutral-0)] hover:bg-[var(--red-700)] hover:border-[var(--neutral-0)] outline outline-2 outline-transparent focus:outline-[var(--red-700)] focus:border-[var(--neutral-0)] focus:bg-[var(--neutral-100)] focus:text-[var(--neutral-800)]"
+          className="bg-[var(--background)] text-[var(--text-color)]  rounded-full px-4 py-1 border border-[var(--neutral-300)] hover:text-[var(--neutral-0)] hover:bg-[var(--red-700)] hover:border-[var(--neutral-0)] outline  outline-transparent focus:outline-[var(--red-700)] focus:border-[var(--neutral-0)] focus:bg-[var(--neutral-100)] focus:text-[var(--neutral-800)] shadow-md"
           onClick={() => onRemove(id)}
         >
           remove

@@ -5,9 +5,9 @@ import { ThemeProvider } from "./context/ThemeContext";
 const App = () => {
   return (
     <ThemeProvider>
-      <>
+      <div className="">
         <Home />
-      </>
+      </div>
     </ThemeProvider>
   );
 };

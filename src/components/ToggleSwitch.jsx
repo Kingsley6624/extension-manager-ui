@@ -14,7 +14,7 @@ const ToggleSwitch = ({isActive, onChange}) => {
         />
         <div
           className={`w-10 h-6 rounded-full shadow-inner ${
-            isActive ? "bg-[var(--red-700)] hover:bg-[var(--red-500)]" : "bg-[var(--neutral-300)]"
+            isActive ? "bg-[var(--toggle-btn)] hover:bg-[var(--red-500)]" : "bg-[var(--neutral-300)]"
           }`}
         ></div>
         <div

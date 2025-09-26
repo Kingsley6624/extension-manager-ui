@@ -12,7 +12,7 @@ const Header = () => {
         <div className="">
           <img className="" src={logo} alt="" />
         </div>
-        <button className="bg-[var(--btn-bg)] p-2 rounded-lg hover:bg-[var(--neutral-300)] border-2 border-transparent outline outline-2 outline-transparent focus:outline-[var(--red-700)] focus:border-[var(--neutral-0)] focus:bg-[var(--neutral-100)]"
+        <button className="bg-[var(--theme-btn)] text-[var(--text-color)] p-2 rounded-lg hover:bg-[var(--theme-btn-hover)] border-2 border-transparent outline outline-2 outline-transparent focus:outline-[var(--theme-btn-outline)] focus:border-[var(--background)]"
         onClick={toggleTheme}
         >{theme === 'light' ? <img src={icon_moon} alt="" /> : <img src={icon_sun} alt="" />}
           
